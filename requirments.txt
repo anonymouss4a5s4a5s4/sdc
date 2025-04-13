@@ -1,0 +1,6 @@
+ultralytics==8.2.103
+pymongo
+python-dotenv
+roboflow
+ipython
+notebook

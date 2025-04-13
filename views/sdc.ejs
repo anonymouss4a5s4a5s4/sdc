@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maritime Violation Monitoring</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video id="video-bg" autoplay muted loop playsinline>
+    <source src="https://www.videvo.net/videvo_files/converted/2015_08/preview/Beach_waves_at_sunset.mp441693.webm" type="video/webm">
+    <source src="videos/webmastercs.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Bubbles -->
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+
+  <!-- Header -->
+  <header>
+    <h1>🌊 Maritime Violation Monitoring</h1>
+    <p>Real-time detection of illegal fishing in protected areas</p>
+  </header>
+
+  <!-- Stats -->
+  <div class="container">
+    <div class="stats-box">
+      <h2>24</h2>
+      <p>Total Violations</p>
+    </div>
+    <div class="stats-box">
+      <h2>3</h2>
+      <p>Today's Incidents</p>
+    </div>
+    <div class="stats-box">
+      <h2>5</h2>
+      <p>Active Surveillance Cameras</p>
+    </div>
+    <div class="stats-box">
+      <h2>12.5</h2>
+      <p>Protected Zone Area (km²)</p>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div class="map-section">
+    <h2>🗺️ Violation Locations</h2>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15876.709670279357!2d106.6601!3d10.7626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1631784561979!5m2!1sen!2sus" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="table-section">
+    <div class="filter-bar">
+      <div style="display: flex; gap: 10px;">
+        <select>
+          <option value="">All Time</option>
+          <option value="t">Today</option>
+          <option value="w">This Week</option>
+        </select>
+      </div>
+      <button id = "btn">🔄 Refresh</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Time</th>
+          <th>Coordinates</th>
+          <th>Boat count</th>
+          <th>Photo</th>
+          <th>confidence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#1245</td>
+          <td>2023-06-15 14:32</td>
+          <td>10.7626° N, 106.6601° E</td>
+          <td>Fishing Trawler</td>
+          <td><img class="img" src="https://www.glangler.com/cdn/shop/articles/Acr129095700928-1333341.jpg?v=1698369453" alt="Boat" width="50"></td>
+          <td><span class="status-new">New</span></td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
