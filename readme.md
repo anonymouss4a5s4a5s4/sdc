@@ -23,3 +23,6 @@ This project detects boats in images using YOLOv8 and stores results in MongoDB.
 📁 notebooks/ - YOLO training & validation  
 📁 scripts/ - Detection + DB scripts  
 📁 config/ - MongoDB connection  
+#----------------------------
+
+there is a simulation video.mp4 it shows a demonstration on how the system is going to work 
